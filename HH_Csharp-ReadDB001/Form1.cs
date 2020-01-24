@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Data.SqlClient;
+using System.Data.Odbc;
 
 namespace HH_Csharp_ReadDB001
 {
     public partial class Form1 : Form
     {
+        SqlConnection sqlConnection;
+        OdbcConnection odbcConnection;
+        const string odbcConnectionString = "DSN=dsnname"; // dsnname must be changed
         public Form1()
         {
             InitializeComponent();
