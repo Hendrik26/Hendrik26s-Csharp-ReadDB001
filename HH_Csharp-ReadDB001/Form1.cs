@@ -25,7 +25,8 @@ namespace HH_Csharp_ReadDB001
 
         private void Form1_Load(object sender, EventArgs e)
         {
-                
+            this.odbcConnection = new OdbcConnection(odbcConnectionString);
+            this.odbcConnection.Open();
         }
     }
 }
