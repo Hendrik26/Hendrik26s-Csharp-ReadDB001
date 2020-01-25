@@ -20,7 +20,7 @@ namespace HH_Csharp_ReadDB001
         const string odbcConnectionString = "DSN=maria-simple-db"; // dsnname has been changed
         public Form1()
         {
-            InitializeComponent(); //////
+            InitializeComponent(); 
         } 
 
         private void Form1_Load(object sender, EventArgs e)
