@@ -35,8 +35,8 @@ namespace HH_Csharp_ReadDB001
             OdbcCommand odbcCommand = new OdbcCommand(readQuery);
             odbcCommand.Connection = this.odbcConnection;
             OdbcDataReader odbcDataReader = odbcCommand.ExecuteReader();
+            textBox1.Text = string.Empty;
 
-          
             if (odbcDataReader.HasRows)
             {
                 while (odbcDataReader.Read())
